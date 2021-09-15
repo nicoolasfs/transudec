@@ -5,7 +5,7 @@
       <mat-icon *ngIf="!drawer.opened">menu</mat-icon>
       <mat-icon *ngIf="drawer.opened">close</mat-icon>
     </button>   
-      <h1 class="example-app-name">ENVIOS UDEC</h1>
+      <h1 class="example-app-name">TRANS UDEC</h1>
 
 
       <span class="example-spacer"></span>
@@ -15,7 +15,12 @@
         </button>
 
         <mat-menu #menu="matMenu">
-            <button mat-menu-item [routerLink]="['/perfil']">
+          <button mat-menu-item style="cursor: pointer" [routerLink]="['/ingresar']">
+            <mat-icon>manage accounts</mat-icon>
+            <span>Ingresar</span>
+          </button>
+          <mat-divider></mat-divider>  
+            <button mat-menu-item style="cursor: pointer" [routerLink]="['/perfil']">
                 <mat-icon>account_box</mat-icon>
                 <span>Mi Perfil</span>
             </button>
@@ -29,25 +34,25 @@
   </mat-toolbar>
   
   <mat-drawer-container class="example-sidenav-content" autosize>
-    <mat-drawer #drawer style="width: 200px" mode="side">
+    <mat-drawer #drawer style="width: 200px; background-color: aliceblue;" mode="side">
 
-        <img src="assets/logo.png" width="128" style="margin-left: 20px;" />
+        <img src="assets/logo.png" width="200"/>
   
-        <button mat-menu-item (click)="drawer.toggle()" style="cursor: pointer" [routerLink]="['/buscar']">
-            <mat-icon>search</mat-icon>
-            <span>Buscar</span>
-        </button>
-        <mat-divider></mat-divider>  
-        
-        <button mat-menu-item (click)="drawer.toggle()" style="cursor: pointer" [routerLink]="['/ingresar']">
-          <mat-icon>manage accounts</mat-icon>
-          <span>Ingresar</span>
+        <button mat-menu-item (click)="drawer.toggle()" style="cursor: pointer; color: black;" [routerLink]="['/buscar']">
+            <mat-icon style="color: black;">search</mat-icon>
+            <span>Rastrear envío</span>
         </button>
         <mat-divider></mat-divider>  
 
-        <button mat-menu-item (click)="drawer.toggle()" style="cursor: pointer" [routerLink]="['/editar']">
-          <mat-icon>edit</mat-icon>
+        <button mat-menu-item (click)="drawer.toggle()" style="cursor: pointer; color: black;" [routerLink]="['/editar']">
+          <mat-icon style="color: black;">edit</mat-icon>
           <span>Editar</span>
+        </button>
+        <mat-divider></mat-divider> 
+
+        <button mat-menu-item (click)="drawer.toggle()" style="cursor: pointer; color: black;" [routerLink]="['/conductores']">
+          <mat-icon style="color: black;">perm_contact_calendar</mat-icon>
+          <span>Conductores</span>
         </button>
         <mat-divider></mat-divider>  
       
