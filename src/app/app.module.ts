@@ -14,6 +14,7 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { ConductoresComponent } from './pages/conductores/conductores.component';
 import { PedidosComponent } from './pages/pedidos/pedidos.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MapaComponent } from './pages/mapa/mapa.component';
     AppRoutingModule, 
     FormsModule, 
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

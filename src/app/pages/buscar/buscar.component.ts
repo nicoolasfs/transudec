@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DepartamentoService } from '../../_service/departamento.service';
 
 @Component({
   selector: 'app-buscar',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuscarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private departamentoService: DepartamentoService) { }
 
   ngOnInit(): void {
-  }
+    console.log("Antes de llamar al servicio");
+    this.departamentoService.listar().subscribe(data =>{
+      console.log(data);
+      data.forEach(element =>{
+
+      console.log(`Código: ${element.idDepartamento} - Nombre: ${element.nombre}`);
+      
+    });
+  });
+}
 
 }
