@@ -15,6 +15,7 @@ import { ConductoresComponent } from './pages/conductores/conductores.component'
 import { PedidosComponent } from './pages/pedidos/pedidos.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DeptoComponent } from './pages/depto/depto.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     PerfilComponent,
     ConductoresComponent,
     PedidosComponent,
-    MapaComponent
+    MapaComponent,
+    DeptoComponent
   ],
   imports: [
     BrowserModule,

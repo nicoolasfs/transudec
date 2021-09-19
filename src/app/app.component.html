@@ -55,6 +55,12 @@
           <span>Conductores</span>
         </button>
         <mat-divider></mat-divider>  
+
+        <button mat-menu-item (click)="drawer.toggle()" style="cursor: pointer; color: black;" [routerLink]="['/depto']">
+          <mat-icon style="color: black;">room</mat-icon>
+          <span>Departamento</span>
+      </button>
+      <mat-divider></mat-divider>  
       
     </mat-drawer>
 
