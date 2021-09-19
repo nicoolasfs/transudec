@@ -8,7 +8,7 @@ import { DepartamentoService } from '../../_service/departamento.service';
 })
 export class BuscarComponent implements OnInit {
 
-  constructor(private departamentoService: DepartamentoService) { }
+  constructor(public departamentoService: DepartamentoService) { }
 
   ngOnInit(): void {
     console.log("Antes de llamar al servicio");

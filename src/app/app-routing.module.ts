@@ -8,6 +8,7 @@ import { ConductoresComponent } from './pages/conductores/conductores.component'
 import { PedidosComponent } from './pages/pedidos/pedidos.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
 import { DeptoComponent } from './pages/depto/depto.component';
+
 const routes: Routes = [
   {path: 'buscar', component: BuscarComponent},
   {path: 'ingresar', component: RegistroComponent},
