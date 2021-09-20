@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgProgress } from 'ngx-progressbar';
+import { ProgressBarService } from 'src/app/_service/progress-bar.service';
 
 @Component({
   selector: 'app-editar',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private progress: NgProgress, public progressBar: ProgressBarService) { }
 
   ngOnInit(): void {
+    this.progressBar.startLoading();
+    this.progressBar.completeLoading();
   }
 
 }

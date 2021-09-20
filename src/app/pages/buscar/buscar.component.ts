@@ -21,7 +21,7 @@ export class BuscarComponent implements OnInit {
   ngOnInit(): void {
 //Añado la progressbar para la vista
 
-    this.progressBar.progressRef = this.progress.ref('progressBar');
+this.progressBar.progressRef = this.progress.ref('progressBar');
     console.log("Antes de llamar al servicio");
     this.progressBar.startLoading();
     this.departamentoService.listar().subscribe(data =>{

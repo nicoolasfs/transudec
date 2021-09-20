@@ -8,16 +8,24 @@ export class ProgressBarService {
 
   progressRef: NgProgressRef;
 
+
+  default:string = "#FFFFFF";
+  currentColor: string = this.default;
   constructor() {}
 
   
     startLoading() {
+      this.currentColor = this.default;
       this.progressRef.start();
+     
     }
   
     completeLoading() {
+      this.currentColor = this.default;
       this.progressRef.complete();
+     
     }
+    
 
    
 }
