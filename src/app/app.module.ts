@@ -16,6 +16,8 @@ import { PedidosComponent } from './pages/pedidos/pedidos.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DeptoComponent } from './pages/depto/depto.component';
+import { NgProgressModule } from "ngx-progressbar";
+import { NgProgressHttpModule } from "ngx-progressbar/http";
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { DeptoComponent } from './pages/depto/depto.component';
     FormsModule, 
     MaterialModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgProgressModule,
+    NgProgressHttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
