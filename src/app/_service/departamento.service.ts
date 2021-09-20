@@ -16,8 +16,7 @@ constructor(private http: HttpClient) { }
     return this.http.get<Departamento[]>(`${this.url}/listar`);
   }
   public listarpordepto(idDepartamento: Departamento){
-    const url = `${this.url}?idDepartamento=${idDepartamento}`;
-    return this.http.get<Ciudad[]>(`${this.url}/ciudad/listarPorDepartamnto`);
+    return this.http.get<Ciudad[]>(`${this.url}/ciudad/listarPorDepartamnto/`+idDepartamento);
   }
 }
 
