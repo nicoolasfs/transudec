@@ -1,12 +1,22 @@
 table {
-    width: 50%;
-    background-color:gray;
+    width: 40%;
+    background-color:rgb(70, 69, 69);
+    text-align: center;
   }
 .btncity{
   background-color: aliceblue;
 }
-.izquierda, .derecha{
-  display:initial;
-  width: 45%;
-  height: 100%;
+.izquierda{
+  width: 49%; 
+  float:left;
+text-align: center;
+ 
+}
+.derecha{
+
+  width: 50%; 
+  float:right;
+  position: relative;
+  left: 4em;
+
 }
