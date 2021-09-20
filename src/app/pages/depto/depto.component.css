@@ -1,6 +1,12 @@
 table {
-    width: 100%;
+    width: 50%;
+    background-color:gray;
   }
 .btncity{
   background-color: aliceblue;
+}
+.izquierda, .derecha{
+  display:initial;
+  width: 45%;
+  height: 100%;
 }
