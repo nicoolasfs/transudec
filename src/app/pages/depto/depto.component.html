@@ -1,2 +1,24 @@
-<h1>Departamentos y ciudades</h1>
-<p>depto works!</p>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="idDepartamento">
+    <th mat-header-cell *matHeaderCellDef> Código</th>
+    <td mat-cell *matCellDef="let element"> {{element.idDepartamento}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="nombre">
+    <th mat-header-cell *matHeaderCellDef> Departamento </th>
+    <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef> Mostrar ciudades </th>
+    <td mat-cell *matCellDef="let element"> 
+    <button mat-stroked-button color="primary" class="btncity" (click)="ShowCity(element.idDepartamento)">
+      <mat-icon>commute</mat-icon>
+    </button>  
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
