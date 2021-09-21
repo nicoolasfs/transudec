@@ -1,4 +1,10 @@
 <ng-progress id="progressBar"  [color]="'white'"></ng-progress>
+
+<div class="inicio">
+<div>
+<h1 class="title">Lista de Departamentos y ciudades</h1>
+
+</div>
 <div class="izquierda">
 <table mat-table [dataSource]="dataSourse" class="mat-elevation-z8">
 
@@ -34,7 +40,7 @@
     </ng-container>
   
     <ng-container matColumnDef="nombre">
-      <th mat-header-cell *matHeaderCellDef> Ciudad </th>
+      <th mat-header-cell *matHeaderCellDef text-align="center"> Ciudad </th>
       <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
     </ng-container>
   
@@ -44,4 +50,5 @@
     <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
   </table>
 
+</div>
 </div>

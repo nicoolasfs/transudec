@@ -7,16 +7,23 @@ table {
   background-color: aliceblue;
 }
 .izquierda{
-  width: 49%; 
+  width: 50%; 
   float:left;
 text-align: center;
- 
+
 }
 .derecha{
-
   width: 50%; 
   float:right;
-  position: relative;
-  left: 4em;
-
+  position: absolute;
+  left: 25em;
+}
+.title{
+  font-style:italic;
+}
+.tabla1{
+  align-items: center;
+}
+.mat-header-cell{
+  text-align:center;
 }

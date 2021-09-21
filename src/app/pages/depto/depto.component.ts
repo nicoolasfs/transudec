@@ -1,8 +1,8 @@
 import { elementEventFullName } from '@angular/compiler/src/view_compiler/view_compiler';
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { DepartamentoService } from '../../_service/departamento.service';
-import { Router } from '@angular/router'
-import { Departamento } from '../../_model/Departamento'
+import { Router } from '@angular/router';
+import { Departamento } from '../../_model/Departamento';
 import { MatTableDataSource } from '@angular/material/table';
 import { Ciudad } from '../../_model/Departamento';
 import { NgProgress } from 'ngx-progressbar';
